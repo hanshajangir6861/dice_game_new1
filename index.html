@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Game</title>
+    
+</head>
+<style>
+#dice img{
+    height: 450px;
+    width: 550px;
+}
+.main{
+    display: flex;
+}
+#game{
+    margin-top: 144px;
+    margin-left: 221px;
+    font-size: 30px;
+}
+#game button{
+    width: 200px;
+    height: 30px;
+    border-radius: 4px;
+    background-color: black;
+    color: white;
+}
+#game button:hover{
+    background-color: white;
+    color: black;
+}
+
+</style>
+<body>
+    <div  class ="main"id="screen1 ">
+    <div id="dice">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWdIeWIgCeutqXHBb_BADcgXrtiX5FB0vDPovgsQpMsDLZTHkQ" alt="">
+    </div>
+    <div id="game">
+        <h1>Dice Game</h1>
+        <button id="startButton">Play Now</button>
+    </div>
+</div>
+
+<div id="main1" id="screen2">
+    <div class="class">
+        <div class="top">
+            <div class="section">
+                <h1>-10</h1>
+                <p>Total Score</p>
+            </div>
+<div class="dice">
+    <div class="game">
+
+    </div>
+    <div class="flex">
+        <div class="btn1">1</div>
+        <div class="btn2">2</div>
+        <div class="btn3">3</div>
+        <div class="btn4">4</div>
+        <div class="btn5">5</div>
+        <div class="btn6">6</div>
+    </div><p>Select Number</p></div>
+</div>
+<div class="over">
+    <div class="part">
+        <img src="C:\Users\HP\AppData\Local\Temp\Temp1_dice images.zip\dice images\dice_1.png" alt="part">
+        <img src="C:\Users\HP\AppData\Local\Temp\Temp1_dice images.zip\dice images\dice_2.png" alt="">
+        <img src="C:\Users\HP\AppData\Local\Temp\Temp1_dice images.zip\dice images\dice_3.png" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+    </div>
+        <p>Click on Dice to Roll</p>
+    </div>
+   
+</div>
+</div>
+<script>
+    
+    const screen1 =document.querySelector("#screen1")
+    const screen2 =document.querySelector("#screen2")
+    const startButton=document.querySelector("#screen1 button")
+    
+    startButton.onclick = () => {
+        screen1.style.display = "none";
+  screen2.style.display = "flex";
+    };
+    
+    </script>
+</body>
+
+</html>
